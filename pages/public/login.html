@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="d-flex justify-content-center align-items-center vh-100">
+        <div class="container w-25">
+            <form action='/login' method='POST' class="row g-3 needs-validation" novalidate>
+                <fieldset class="border p-3">
+                    <legend class="mb-3 text-center">Autenticação do Sistema</legend>
+                    <div class="col-12 text-center">
+                        <label for="usuario" class="form-label">Usuário:</label>
+                        <input type="text" class="form-control w-75 mx-auto" id="usuario" name="usuario" required>
+                    </div>
+                    <div class="col-12 mt-2 text-center">
+                        <label for="senha" class="form-label">Senha</label>
+                        <input type="password" class="form-control w-75 mx-auto" id="senha" name="senha" required>
+                    </div>
+                    <div class="col-12 mt-3 d-flex justify-content-center">
+                        <button class="btn btn-primary w-25" type="submit">Login</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
