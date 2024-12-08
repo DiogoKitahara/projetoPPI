@@ -26,7 +26,7 @@ var listaUsuarios = [];
 const mensagens = [];
 
 function menuView(req, resp) {
-    const dataHoraUltimoLogin = req.cookies['dataHoraUltimoLogin'];
+    let dataHoraUltimoLogin = req.cookies['dataHoraUltimoLogin'];
     if (!dataHoraUltimoLogin) {
         dataHoraUltimoLogin = '';
     }
@@ -59,7 +59,7 @@ function menuView(req, resp) {
 }
 
 function cadastroUsuarioView(req, resp) {
-    const dataHoraUltimoLogin = req.cookies['dataHoraUltimoLogin'];
+    let dataHoraUltimoLogin = req.cookies['dataHoraUltimoLogin'];
     if (!dataHoraUltimoLogin) {
         dataHoraUltimoLogin = '';
     }
@@ -120,7 +120,7 @@ function cadastrarUsuario(req, resp) {
     const apelido = req.body.apelido;
     const dataNascimento = req.body.dataNascimento;
 
-    const dataHoraUltimoLogin = req.cookies['dataHoraUltimoLogin'];
+    let dataHoraUltimoLogin = req.cookies['dataHoraUltimoLogin'];
     if (!dataHoraUltimoLogin) {
         dataHoraUltimoLogin = '';
     }
@@ -273,7 +273,7 @@ function cadastrarUsuario(req, resp) {
 }
 
 function chatView(req, resp) {
-    const dataHoraUltimoLogin = req.cookies['dataHoraUltimoLogin'];
+    let dataHoraUltimoLogin = req.cookies['dataHoraUltimoLogin'];
     if (!dataHoraUltimoLogin) {
         dataHoraUltimoLogin = '';
     }
@@ -338,7 +338,7 @@ function postarMensagem(req, resp) {
 }
 
 function autenticarUsuario(req, resp) {
-    const dataHoraUltimoLogin = req.cookies['dataHoraUltimoLogin'];
+    let dataHoraUltimoLogin = req.cookies['dataHoraUltimoLogin'];
     if (!dataHoraUltimoLogin) {
         dataHoraUltimoLogin = '';
     }
